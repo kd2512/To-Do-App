@@ -1,5 +1,5 @@
 import './App.css';
-import React, {Component} from 'react';
+import React from 'react';
 import TodoItems from './TodoItems';
 
 class TodoList extends React.Component{
@@ -17,7 +17,7 @@ class TodoList extends React.Component{
 
     addItem=(event)=>{
         var inputElement=this.refs.inputElement.value;
-        if(inputElement!=""){
+        if(inputElement!==""){
             var currentItem={
                 text: inputElement,
                 key: Date.now()
